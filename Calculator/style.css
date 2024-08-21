@@ -1,0 +1,114 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --main-color: #1d1d1d;
+    --secondary-color: #FE7F57;
+    --hover-color: #fe7e5785;
+}
+
+
+html{
+    font-size: 62.5%;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+    background-color: #f5f5f5;
+    display: grid;
+    place-items: center;
+    height: 100vh;
+    background-image: url(imgs/Black\ Gradient\ Vlad\ Fara.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+
+.container{
+    margin: 0 auto;
+    background-color: var(--main-color);
+    color: white;
+    padding: 4rem 0 0 0;
+    border-radius: 1rem;
+    display: grid;
+    place-items: center;
+    overflow: hidden;
+    width: 40rem;
+    
+}
+
+.calculation{
+    width: 80%;
+    margin-bottom: 2rem;
+    border-bottom: 2px solid var(--secondary-color);
+    padding-bottom: 2rem;
+
+}
+
+input{
+    width: 100%;
+    padding: 1rem;
+    font-size: 2.8rem;
+    border: none;
+    background-color: transparent;
+    color: white;
+    /* border: 1px solid white; */
+    text-align: right;
+    margin-bottom: 2rem;
+    letter-spacing: .3rem;
+}
+
+.calculation h1{
+    font-size: 5.5rem;
+    text-align: right;
+    letter-spacing: 0.2rem;
+    margin-bottom: 2rem;
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+
+
+
+
+.calc-btns{
+    width: 100%;
+    /* border: 1px solid blue; */
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(1, 1fr);
+    gap: 1rem;
+}
+
+.calc-btns button{
+    border: none;
+    color: white;
+    background-color: transparent;
+    /* border: 1px solid white; */
+    padding: 1rem 2rem;
+    font-size: 2.9rem;
+    cursor: pointer;
+    border-radius: 0.5rem;
+    font-weight: 300;
+    transition: all 0.3s ease;
+    margin-bottom: 1rem;
+    text-align: center;
+
+}
+
+
+
+
+.equal{
+    height: 120%;
+    grid-row: span 2;
+    background-color: var(--secondary-color) !important;
+    color: white;
+    font-weight: 700;
+    color: var(--main-color) !important;
+}
+
+
